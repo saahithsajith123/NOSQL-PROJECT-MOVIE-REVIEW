@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create or Edit Post</title>
+    <link rel="stylesheet" href="/static/css/post.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Thought Streams</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="post-section">
+        <div class="post-container">
+            <h2>Create a New Post</h2>
+
+            <form action="/submit-post" method="POST" id="postForm">
+                <div class="form-group">
+                    <label for="title">Post Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter post title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="content">Post Content</label>
+                    <textarea id="content" name="content" placeholder="Write your post here..." rows="8" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tags">Tags</label>
+                    <input type="text" id="tags" name="tags" placeholder="Enter tags (comma-separated)">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Submit Post</button>
+                </div>
+            </form>
+            
+            <div class="edit-post">
+                <h3>Want to Edit an Existing Post?</h3>
+                <p>Select a post to edit:</p>
+                <ul class="post-list">
+                    <li>
+                        <span class="post-title">How to Learn Web Development</span>
+                        <button class="btn-edit" onclick="editPost('1')">Edit Post</button>
+                    </li>
+                    <li>
+                        <span class="post-title">Best Practices in Blogging</span>
+                        <button class="btn-edit" onclick="editPost('2')">Edit Post</button>
+                    </li>
+                    <li>
+                        <span class="post-title">Getting Started with Flask</span>
+                        <button class="btn-edit" onclick="editPost('3')">Edit Post</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function editPost(postId) {
+            // For simplicity, let's assume this function loads the post details into the form
+            document.getElementById('title').value = "Loaded Post Title " + postId;
+            document.getElementById('content').value = "Loaded content for Post " + postId;
+            document.getElementById('tags').value = "sample, tags, post" + postId;
+            document.querySelector('h2').textContent = "Edit Post " + postId;
+            document.querySelector('.btn-submit').textContent = "Update Post";
+        }
+    </script>
+</body>
+</html>

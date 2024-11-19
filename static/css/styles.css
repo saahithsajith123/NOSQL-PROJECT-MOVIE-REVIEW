@@ -1,0 +1,206 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #000000;
+}
+
+header {
+    background-color: #010508;
+    color: #b02d2d;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    margin: 0;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #f9ca24;
+}
+
+.hero {
+    height: 100vh;
+    background: url('/static/images/stream.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #7b6565;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.hero-content .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f9ca24;
+    color: #0a3d62;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hero-content .btn:hover {
+    background-color: #f0932b;
+}
+
+.about {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.about-text {
+    margin-top: -100px;
+    max-width: 50%;
+}
+
+.about-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.about-image {
+    max-width: 40%;
+    
+}
+
+.about-image img {
+    width: 80%;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #0a3d62;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #f9ca24;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #f0932b;
+}
+
+/* Style the reviews section */
+.reviews-section {
+    margin-top: 30px;
+}
+
+.review-list {
+    margin-top: 20px;
+}
+
+.review-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.review-header .review-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 10px;
+}
+
+.review-text {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.no-reviews {
+    font-style: italic;
+    color: #888;
+}
+
+/* Style the add review form */
+.review-form {
+    margin-top: 20px;
+}
+
+.review-form textarea {
+    resize: vertical;
+    max-height: 200px;
+}
+
+/* Style the submit button */
+.review-form button {
+    width: 100%;
+    text-align: center;
+}

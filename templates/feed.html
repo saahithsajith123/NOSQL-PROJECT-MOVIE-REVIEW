@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram-Style Feed</title>
+    <link rel="stylesheet" href="/static/css/feed.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Thought Streams</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Create Post</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="feed-section">
+        <div class="feed-container">
+            <!-- User Post 1 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/50" alt="User Image" class="user-img">
+                    <div class="user-details">
+                        <h3>Jane Doe</h3>
+                        <p>@janedoe • 1 hour ago</p>
+                    </div>
+                </div>
+
+                <div class="post-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                </div>
+
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <button class="like-btn"><i class="fa fa-heart"></i> Like</button>
+                        <button class="comment-btn"><i class="fa fa-comment"></i> Comment</button>
+                    </div>
+                    <p class="post-caption"><strong>Jane Doe</strong> Just learned how to build a Flask web app! Excited to dive deeper into web development. #WebDev #Flask</p>
+                    <p class="post-likes">Liked by <strong>50 people</strong></p>
+                </div>
+            </div>
+
+            <!-- User Post 2 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/50" alt="User Image" class="user-img">
+                    <div class="user-details">
+                        <h3>John Smith</h3>
+                        <p>@johnsmith • 2 hours ago</p>
+                    </div>
+                </div>
+
+                <div class="post-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                </div>
+
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <button class="like-btn"><i class="fa fa-heart"></i> Like</button>
+                        <button class="comment-btn"><i class="fa fa-comment"></i> Comment</button>
+                    </div>
+                    <p class="post-caption"><strong>John Smith</strong> Check out my latest blog post on the future of AI in healthcare. #AI #Healthcare</p>
+                    <p class="post-likes">Liked by <strong>75 people</strong></p>
+                </div>
+            </div>
+
+            <!-- User Post 3 -->
+            <div class="post-card">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/50" alt="User Image" class="user-img">
+                    <div class="user-details">
+                        <h3>Alice Johnson</h3>
+                        <p>@alicejohnson • 3 hours ago</p>
+                    </div>
+                </div>
+
+                <div class="post-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Post Image">
+                </div>
+
+                <div class="post-footer">
+                    <div class="post-actions">
+                        <button class="like-btn"><i class="fa fa-heart"></i> Like</button>
+                        <button class="comment-btn"><i class="fa fa-comment"></i> Comment</button>
+                    </div>
+                    <p class="post-caption"><strong>Alice Johnson</strong> Excited to dive deeper into Data Science and ML! #DataScience #ML</p>
+                    <p class="post-likes">Liked by <strong>80 people</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

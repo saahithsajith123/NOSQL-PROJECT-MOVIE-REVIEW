@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #e3e6e9;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Tag Search Section */
+.tag-search-section {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.search-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #1d3557;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #1d3557;
+}
+
+/* Popular Tags */
+.popular-tags {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.popular-tags ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popular-tags ul li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.popular-tags ul li a {
+    color: #0077b6;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #457b9d;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #f1faee;
+}
+
+.popular-tags ul li a:hover {
+    background-color: #457b9d;
+    color: white;
+}
+
+/* Post Results */
+.post-results {
+    margin-top: 30px;
+}
+
+.post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-card {
+    width: 30%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.post-card h4 {
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.post-card a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.post-card a:hover {
+    text-decoration: underline;
+}

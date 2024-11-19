@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Thought Streams</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Create Post</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="dashboard-section">
+        <div class="dashboard-container">
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">My Posts</a></li>
+                    <li><a href="#">Create New Post</a></li>
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                </ul>
+            </aside>
+            
+            <main class="dashboard-main">
+                <h2>Welcome, John Doe!</h2>
+                <div class="stats">
+                    <div class="stat-box">
+                        <h3>Total Posts</h3>
+                        <p>12</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Likes Received</h3>
+                        <p>135</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Comments Received</h3>
+                        <p>78</p>
+                    </div>
+                </div>
+                
+                <div class="recent-activities">
+                    <h3>Recent Activities</h3>
+                    <ul>
+                        <li>You published a new post: <a href="#">"Learning Flask for Beginners"</a></li>
+                        <li>You received 5 new comments on your post: <a href="#">"Best Blogging Practices"</a></li>
+                        <li>You liked a post: <a href="#">"Why Python is the Future"</a></li>
+                    </ul>
+                </div>
+                
+                <div class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <button onclick="window.location.href='#'">Create New Post</button>
+                    <button onclick="window.location.href='#'">View All Posts</button>
+                </div>
+            </main>
+        </div>
+    </section>
+</body>
+</html>

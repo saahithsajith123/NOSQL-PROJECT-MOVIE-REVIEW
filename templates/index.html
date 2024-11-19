@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assauge </title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Assuage:Discover,Enjoy,express</h1>
+        <nav>
+            <ul>
+                <!-- Use url_for to link to Flask routes -->
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2></h2>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-text">
+            <h3>Welcome to Assuage – Your Ultimate Movie Companion</h3>
+            <p>At Assuage, we're all about making your movie experience smoother and more exciting. Dive into a world of films where you can browse, review, and rate your favorites with ease. Whether you’re hunting for the next blockbuster or rediscovering a classic, our platform has you covered. Search by genre, actor, or language, read honest reviews, and share your own take. Plus, get personalized recommendations tailored to your tastes. Join the Assuage community today and let your movie journey begin!
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="/static/images/home.jpg" alt="Flowing water">
+        </div>
+    </section>
+
+    
+
+</body>
+</html>

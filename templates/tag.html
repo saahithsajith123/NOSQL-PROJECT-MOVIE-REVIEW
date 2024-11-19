@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search by Tag</title>
+    <link rel="stylesheet" href="/static/css/tag.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Thought Streams</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Create Post</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tag-search-section">
+        <div class="search-container">
+            <h2>Search Posts by Tags</h2>
+
+            <div class="search-bar">
+                <input type="text" id="tagSearch" placeholder="Enter a tag to search..." onkeyup="searchPosts()">
+                <button onclick="searchPosts()">Search</button>
+            </div>
+
+            <div class="popular-tags">
+                <h3>Popular Tags</h3>
+                <ul>
+                    <li><a href="#" onclick="selectTag('Python')">Python</a></li>
+                    <li><a href="#" onclick="selectTag('Web Development')">Web Development</a></li>
+                    <li><a href="#" onclick="selectTag('Flask')">Flask</a></li>
+                    <li><a href="#" onclick="selectTag('Data Science')">Data Science</a></li>
+                    <li><a href="#" onclick="selectTag('AI')">AI</a></li>
+                </ul>
+            </div>
+
+            <div class="post-results">
+                <h3>Posts Matching: <span id="selectedTag">All Tags</span></h3>
+
+                <div class="post-grid" id="postGrid">
+                    <!-- Placeholder for posts -->
+                    <div class="post-card">
+                        <h4>Understanding Python Basics</h4>
+                        <p>A comprehensive guide to Python for beginners...</p>
+                        <a href="#">Read More</a>
+                    </div>
+
+                    <div class="post-card">
+                        <h4>Building Websites with Flask</h4>
+                        <p>Learn how to create web applications using Flask...</p>
+                        <a href="#">Read More</a>
+                    </div>
+
+                    <div class="post-card">
+                        <h4>The Future of AI in Healthcare</h4>
+                        <p>Exploring the latest trends in artificial intelligence...</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function selectTag(tag) {
+            document.getElementById('tagSearch').value = tag;
+            document.getElementById('selectedTag').innerText = tag;
+            searchPosts();
+        }
+
+        function searchPosts() {
+            const tag = document.getElementById('tagSearch').value.toLowerCase();
+            document.getElementById('selectedTag').innerText = tag ? tag : "All Tags";
+
+            // Example static filter
+            const posts = document.querySelectorAll('.post-card');
+            posts.forEach(post => {
+                if (tag === "" || post.innerHTML.toLowerCase().includes(tag)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

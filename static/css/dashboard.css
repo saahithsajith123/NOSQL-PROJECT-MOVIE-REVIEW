@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #1d3557;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background-color: #457b9d;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Main */
+.dashboard-main {
+    width: 75%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.dashboard-main h2 {
+    text-align: center;
+}
+
+/* Statistics Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stat-box {
+    background-color: #f1faee;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-box h3 {
+    color: #1d3557;
+    font-size: 18px;
+}
+
+.stat-box p {
+    font-size: 22px;
+    color: #457b9d;
+}
+
+/* Recent Activities */
+.recent-activities {
+    margin: 20px 0;
+}
+
+.recent-activities h3 {
+    font-size: 18px;
+    color: #1d3557;
+}
+
+.recent-activities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-activities ul li {
+    padding: 8px 0;
+    color: #555;
+}
+
+.recent-activities ul li a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.recent-activities ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quick-actions h3 {
+    font-size: 18px;
+    color: #1d3557;
+}
+
+.quick-actions button {
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quick-actions button:hover {
+    background-color: #1d3557;
+}
